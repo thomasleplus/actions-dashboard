@@ -18,6 +18,7 @@ thomasleplus/FetchMuniTimes
 thomasleplus/firepwned
 thomasleplus/gcontacts-birthdays
 thomasleplus/gdrive-archive
+thomasleplus/google-apps-scripts
 thomasleplus/gphotos-archive
 thomasleplus/gpsio
 thomasleplus/java-sql-inspector
