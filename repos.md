@@ -16,7 +16,6 @@ thomasleplus/decritic
 thomasleplus/ethereum
 thomasleplus/FetchMuniTimes
 thomasleplus/firepwned
-thomasleplus/gcontacts-birthdays
 thomasleplus/gdrive-archive
 thomasleplus/google-apps-scripts
 thomasleplus/gphotos-archive
@@ -31,6 +30,7 @@ thomasleplus/macosx
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/SubChannel
+thomasleplus/tasker
 thomasleplus/thomasleplus
 thomasleplus/tinkerit
 thomasleplus/VisualCrypto
