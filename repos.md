@@ -15,7 +15,6 @@ thomasleplus/DBGrep
 thomasleplus/decritic
 thomasleplus/ethereum
 thomasleplus/FetchMuniTimes
-thomasleplus/firepwned
 thomasleplus/gdrive-archive
 thomasleplus/google-apps-scripts
 thomasleplus/gphotos-archive
