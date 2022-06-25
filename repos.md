@@ -29,6 +29,7 @@ thomasleplus/macosx
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/SubChannel
+thomasleplus/sublime-installer
 thomasleplus/tasker
 thomasleplus/thomasleplus
 thomasleplus/tinkerit
