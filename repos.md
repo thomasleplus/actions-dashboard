@@ -26,6 +26,7 @@ thomasleplus/JEP-290
 thomasleplus/jwt-utils
 thomasleplus/kml-utils
 thomasleplus/macosx
+thomasleplus/offcrypt
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/SubChannel
