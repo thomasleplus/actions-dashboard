@@ -12,6 +12,7 @@ thomasleplus/code-quantum
 thomasleplus/crazy-santa
 thomasleplus/DBGrep
 thomasleplus/decritic
+thomasleplus/defcon30
 thomasleplus/ethereum
 thomasleplus/FetchMuniTimes
 thomasleplus/gdrive-archive
@@ -28,6 +29,7 @@ thomasleplus/macosx
 thomasleplus/offcrypt
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
+thomasleplus/spring-security-relative-host-header-redirection
 thomasleplus/SubChannel
 thomasleplus/tasker
 thomasleplus/thomasleplus
