@@ -21,6 +21,8 @@ jobs:
         sudo apt install -y jq
 
     - name: Generate
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         ./fetch.sh -u "${{ github.repository_owner }}" -o repos.md
         ./generate.sh -o dashboard.md -i repos.md
