@@ -52,6 +52,7 @@ parse_repo() {
         writeout " [![Docker Build](https://img.shields.io/docker/cloud/build/${repo_short})](https://hub.docker.com/r/${repo_short})"
     fi
     
+    writeout " [![GitHub PR](https://img.shields.io/github/issues/${1}.svg)](https://GitHub.com/${1}/issues)"
     writeout " [![GitHub PR](https://img.shields.io/github/issues-pr/${1}.svg)](https://GitHub.com/${1}/pulls)"
     
     writeout " |\n"
