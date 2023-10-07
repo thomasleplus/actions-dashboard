@@ -10,6 +10,7 @@ thomasleplus/CafeBab
 thomasleplus/calendars
 thomasleplus/code-quantum
 thomasleplus/crazy-santa
+thomasleplus/cyberchef-recipes
 thomasleplus/DBGrep
 thomasleplus/decritic
 thomasleplus/defcon30
