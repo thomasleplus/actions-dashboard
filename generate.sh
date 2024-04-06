@@ -35,22 +35,13 @@ parse_repo() {
     repo="https://github.com/${project}"
     writeout "| $repo |"
 
-    docker=0
     while read -r name; do
-	if [[ "${name}" =~ [Dd]ocker ]]; then
-	    docker=1
-	fi
         encoded_name="$(urlencode "${name}")"
         writeout " ["
         writeout "![${name}](${repo}/workflows/${encoded_name}/badge.svg)"
         writeout "]"
         writeout "(${repo}/actions?query=workflow:\"${encoded_name}\")"
     done < <(curl -sL "https://api.github.com/repos/${1}/actions/workflows" | jq -r '.workflows[].name')
-
-    if [ ${docker} -eq 1 ]; then
-	repo_short="${project/\/docker-/\/}"
-        writeout " [![Docker Build](https://img.shields.io/docker/cloud/build/${repo_short})](https://hub.docker.com/r/${repo_short})"
-    fi
     
     writeout " [![GitHub PR](https://img.shields.io/github/issues/${1}.svg)](https://GitHub.com/${1}/issues)"
     writeout " [![GitHub PR](https://img.shields.io/github/issues-pr/${1}.svg)](https://GitHub.com/${1}/pulls)"
