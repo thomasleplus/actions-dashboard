@@ -1,7 +1,5 @@
 thomasleplus/.allstar
 thomasleplus/actions-dashboard
-thomasleplus/ADO
-thomasleplus/android-nfc-timestamp
 thomasleplus/Arduino
 thomasleplus/Asn1dump
 thomasleplus/bazaar
@@ -15,11 +13,9 @@ thomasleplus/DBGrep
 thomasleplus/decritic
 thomasleplus/defcon30
 thomasleplus/ethereum
-thomasleplus/FetchMuniTimes
 thomasleplus/gdrive-archive
 thomasleplus/google-apps-scripts
 thomasleplus/gphotos-archive
-thomasleplus/gpsio
 thomasleplus/java-sql-inspector
 thomasleplus/JavaInfo
 thomasleplus/jdk-serial-filter-trace
@@ -28,7 +24,6 @@ thomasleplus/joplin-plugin-note-rename
 thomasleplus/jwt-utils
 thomasleplus/kml-utils
 thomasleplus/macosx
-thomasleplus/offcrypt
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/spring-security-relative-host-header-redirection
@@ -39,5 +34,4 @@ thomasleplus/tinkerit
 thomasleplus/VisualCrypto
 thomasleplus/xee
 thomasleplus/xsl-transformations
-thomasleplus/ZymoloJ
 
