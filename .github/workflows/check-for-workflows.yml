@@ -4,34 +4,33 @@ on:
   push:
   pull_request:
   schedule:
-  - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
 
-    - name: Check out
-      uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - name: Install jq
+        run: |
+          sudo apt update
+          sudo apt install -y jq
 
-    - name: Install jq
-      run: |
-        sudo apt update
-        sudo apt install -y jq
-
-    - name: Generate
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        ./fetch.sh -u "${{ github.repository_owner }}" -o repos.md
-        ./generate.sh -o dashboard.md -i repos.md
-        if [ -z "$(git status -s -- dashboard.md repos.md)" ]; then
-          echo No changes to commit
-          exit 0
-        fi
-        git config user.email "check-action@github"
-        git config user.name "check-action"
-        git add repos.md dashboard.md
-        git commit -m "Update markdown files"
-        git push origin "${GITHUB_REF#refs/heads/}"
+      - name: Generate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ./fetch.sh -u "${{ github.repository_owner }}" -o repos.md
+          ./generate.sh -o dashboard.md -i repos.md
+          if [ -z "$(git status -s -- dashboard.md repos.md)" ]; then
+            echo No changes to commit
+            exit 0
+          fi
+          git config user.email "check-action@github"
+          git config user.name "check-action"
+          git add repos.md dashboard.md
+          git commit -m "Update markdown files"
+          git push origin "${GITHUB_REF#refs/heads/}"
