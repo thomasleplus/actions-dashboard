@@ -40,6 +40,8 @@ done
 
 echo Generating markdown for "$username"...
 count=0
+# Using while read < <(command) syntax is needed otherwise updated
+# count gets lost in subshell
 while read -r line; do
     [[ "$line" = \#* ]] && continue
     [ -z "$line" ] && continue

@@ -35,13 +35,13 @@ parse_repo() {
     repo="https://github.com/${project}"
     writeout "| $repo |"
 
-    while read -r name; do
+    curl -sL "https://api.github.com/repos/${1}/actions/workflows" | jq -r '.workflows[].name' | while read -r name; do
         encoded_name="$(urlencode "${name}")"
         writeout " ["
         writeout "![${name}](${repo}/workflows/${encoded_name}/badge.svg)"
         writeout "]"
         writeout "(${repo}/actions?query=workflow:\"${encoded_name}\")"
-    done < <(curl -sL "https://api.github.com/repos/${1}/actions/workflows" | jq -r '.workflows[].name')
+    done
     
     writeout " [![GitHub PR](https://img.shields.io/github/issues/${1}.svg)](https://GitHub.com/${1}/issues)"
     writeout " [![GitHub PR](https://img.shields.io/github/issues-pr/${1}.svg)](https://GitHub.com/${1}/pulls)"
@@ -75,6 +75,8 @@ writeout "| --- | --- |\n"
 for i in "${inputs[@]}"; do
     echo Generating markdown for "${i##*/}"...
     count=0
+    # Using while read < <(command) syntax is needed otherwise updated
+    # count gets lost in subshell
     while read -r line; do
         [[ "$line" = \#* ]] && continue
         [ -z "$line" ] && continue
