@@ -23,6 +23,7 @@ thomasleplus/JEP-290
 thomasleplus/joplin-plugin-note-rename
 thomasleplus/jwt-utils
 thomasleplus/kml-utils
+thomasleplus/LaZagne
 thomasleplus/macosx
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
