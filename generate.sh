@@ -70,8 +70,6 @@ done
 
 [[ "$output_file" != *.md ]] && output_file="$output_file".md
 
-tmpd="$(mktemp -d -t dashboardXXXX)"
-
 writeout "| Repo | Actions |\n"
 writeout "| --- | --- |\n"
 for i in "${inputs[@]}"; do
@@ -89,4 +87,3 @@ done
 
 echo -e "$output" > "$output_file"
 echo Wrote to "$output_file"
-rm -rf "$tmpd"
