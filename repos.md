@@ -16,6 +16,7 @@ thomasleplus/ethereum
 thomasleplus/gdrive-archive
 thomasleplus/google-apps-scripts
 thomasleplus/gphotos-archive
+thomasleplus/java-memory-safety
 thomasleplus/java-sql-inspector
 thomasleplus/JavaInfo
 thomasleplus/jdk-serial-filter-trace
@@ -25,6 +26,7 @@ thomasleplus/jwt-utils
 thomasleplus/kml-utils
 thomasleplus/LaZagne
 thomasleplus/macosx
+thomasleplus/Memory-Safety
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/spring-security-relative-host-header-redirection
