@@ -26,6 +26,7 @@ thomasleplus/jwt-utils
 thomasleplus/kml-utils
 thomasleplus/LaZagne
 thomasleplus/macosx
+thomasleplus/maven-resolver
 thomasleplus/Memory-Safety
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
