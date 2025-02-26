@@ -1,6 +1,5 @@
 thomasleplus/.allstar
 thomasleplus/actions-dashboard
-thomasleplus/Arduino
 thomasleplus/Asn1dump
 thomasleplus/bazaar
 thomasleplus/bookmarklets
