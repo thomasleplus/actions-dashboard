@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: Install jq
+        shell: bash
         run: |
           sudo apt update
           sudo apt install -y jq
@@ -22,6 +23,7 @@ jobs:
       - name: Generate
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
         run: |
           ./fetch.sh -u "${{ github.repository_owner }}" -o repos.md
           ./generate.sh -o dashboard.md -i repos.md
