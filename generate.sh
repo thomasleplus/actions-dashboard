@@ -43,8 +43,8 @@ parse_repo() {
         writeout "(${repo}/actions?query=workflow:\"${encoded_name}\")"
     done
     
-    writeout " [![GitHub PR](https://img.shields.io/github/issues/${1}.svg)](https://GitHub.com/${1}/issues)"
-    writeout " [![GitHub PR](https://img.shields.io/github/issues-pr/${1}.svg)](https://GitHub.com/${1}/pulls)"
+    writeout " [![GitHub PR](https://img.shields.io/github/issues/${1}.svg)](https://gitHub.com/${1}/issues)"
+    writeout " [![GitHub PR](https://img.shields.io/github/issues-pr/${1}.svg)](https://gitHub.com/${1}/pulls)"
     
     writeout " |\n"
     echo " Generated markdown for $1"
