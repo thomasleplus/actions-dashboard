@@ -28,7 +28,6 @@ thomasleplus/macosx
 thomasleplus/Memory-Safety
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
-thomasleplus/security-insights-spec
 thomasleplus/spring-security-relative-host-header-redirection
 thomasleplus/SubChannel
 thomasleplus/tasker
