@@ -33,7 +33,7 @@ writeout() { output="$output""$1"; }
 parse_repo() {
     project="$1"
     repo="https://github.com/${project}"
-    writeout "| $repo |"
+    writeout "| [${project}]($repo) |"
 
     curl -sL "https://api.github.com/repos/${1}/actions/workflows" | jq -r '.workflows[].name' | while read -r name; do
         encoded_name="$(urlencode "${name}")"
