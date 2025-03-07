@@ -25,7 +25,6 @@ thomasleplus/jwt-utils
 thomasleplus/kml-utils
 thomasleplus/LaZagne
 thomasleplus/macosx
-thomasleplus/Memory-Safety
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/spring-security-relative-host-header-redirection
