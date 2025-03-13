@@ -29,6 +29,7 @@ thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/spring-security-relative-host-header-redirection
 thomasleplus/SubChannel
+thomasleplus/super-linter
 thomasleplus/tasker
 thomasleplus/thomasleplus
 thomasleplus/tinkerit
