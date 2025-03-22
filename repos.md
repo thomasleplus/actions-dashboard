@@ -11,6 +11,7 @@ thomasleplus/cyberchef-recipes
 thomasleplus/DBGrep
 thomasleplus/decritic
 thomasleplus/defcon30
+thomasleplus/DevSkim-Action
 thomasleplus/ethereum
 thomasleplus/gdrive-archive
 thomasleplus/google-apps-scripts
