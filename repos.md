@@ -25,7 +25,7 @@ thomasleplus/joplin-plugin-note-rename
 thomasleplus/jwt-utils
 thomasleplus/kml-utils
 thomasleplus/LaZagne
-thomasleplus/macosx
+thomasleplus/macOS
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/spring-security-relative-host-header-redirection
