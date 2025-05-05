@@ -24,13 +24,11 @@ thomasleplus/JEP-290
 thomasleplus/joplin-plugin-note-rename
 thomasleplus/jwt-utils
 thomasleplus/kml-utils
-thomasleplus/LaZagne
 thomasleplus/macOS
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/spring-security-relative-host-header-redirection
 thomasleplus/SubChannel
-thomasleplus/super-linter
 thomasleplus/tasker
 thomasleplus/thomasleplus
 thomasleplus/tinkerit
