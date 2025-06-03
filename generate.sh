@@ -72,7 +72,7 @@ done
 
 writeout "| Repo | Actions |\n"
 writeout "| --- | --- |\n"
-for i in "${inputs[@]}"; do
+for i in "${inputs[@]+"${inputs[@]}"}"; do
     echo Generating markdown for "${i##*/}"...
     count=0
     # Using while read < <(command) syntax is needed otherwise updated
