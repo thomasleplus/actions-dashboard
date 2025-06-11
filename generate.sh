@@ -35,7 +35,7 @@ parse_repo() {
     repo="https://github.com/${project}"
     writeout "| [${project}]($repo) |"
 
-    curl -sL "https://api.github.com/repos/${1}/actions/workflows" | jq -r '.workflows[].name' | while read -r name; do
+    curl -fsSL "https://api.github.com/repos/${1}/actions/workflows" | jq -r '.workflows[].name' | while read -r name; do
         encoded_name="$(urlencode "${name}")"
         writeout " ["
         writeout "![${name}](${repo}/workflows/${encoded_name}/badge.svg)"
@@ -82,7 +82,7 @@ for i in "${inputs[@]+"${inputs[@]}"}"; do
         [ -z "$line" ] && continue
         parse_repo "$line"
         count=$((count+1))
-    done < <(if isurl "$i"; then curl -sL "$i"; else cat "$i"; fi)
+    done < <(if isurl "$i"; then curl -fsSL "$i"; else cat "$i"; fi)
     [ $count -eq 0 ] && { echo "Failed to read $i"; exit 1; }
     writeout "---\n\n"
 done

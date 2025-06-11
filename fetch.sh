@@ -47,7 +47,7 @@ while read -r line; do
     [ -z "$line" ] && continue
     writeout "$line\n"
     count=$((count+1))
-done < <(curl -sL --header "authorization: Bearer ${GITHUB_TOKEN}" "https://api.github.com/users/$username/repos?per_page=1000"  | jq -r '.[].full_name' )
+done < <(curl -fsSL --header "authorization: Bearer ${GITHUB_TOKEN}" "https://api.github.com/users/$username/repos?per_page=1000"  | jq -r '.[].full_name' )
 [ $count -eq 0 ] && { echo "Failed to read"; exit 1; }
 
 echo -e "$output" > "$output_file"
