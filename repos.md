@@ -2,6 +2,7 @@ thomasleplus/.allstar
 thomasleplus/actions-dashboard
 thomasleplus/asn1dump
 thomasleplus/bazaar
+thomasleplus/Bjorn
 thomasleplus/bookmarklets
 thomasleplus/CafeBab
 thomasleplus/calendars
@@ -11,11 +12,13 @@ thomasleplus/cyberchef-recipes
 thomasleplus/DBGrep
 thomasleplus/decritic
 thomasleplus/defcon30
-thomasleplus/DevSkim-Action
 thomasleplus/ethereum
+thomasleplus/Flipper-IRDB
+thomasleplus/flipperzero-ir
 thomasleplus/gdrive-archive
 thomasleplus/google-apps-scripts
 thomasleplus/gphotos-archive
+thomasleplus/IRDB
 thomasleplus/java-memory-safety
 thomasleplus/java-sql-inspector
 thomasleplus/JavaInfo
