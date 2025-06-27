@@ -30,6 +30,7 @@ thomasleplus/kml-utils
 thomasleplus/macOS
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
+thomasleplus/scorecard
 thomasleplus/spring-security-relative-host-header-redirection
 thomasleplus/SubChannel
 thomasleplus/tasker
