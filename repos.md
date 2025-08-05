@@ -24,7 +24,7 @@ thomasleplus/java-sql-inspector
 thomasleplus/JavaInfo
 thomasleplus/jdk-serial-filter-trace
 thomasleplus/JEP-290
-thomasleplus/joplin-plugin-note-rename
+thomasleplus/joplin-plugin-note-rename-regex
 thomasleplus/jwt-utils
 thomasleplus/kml-utils
 thomasleplus/macOS
