@@ -34,5 +34,5 @@ jobs:
           git config user.email "check-action@github"
           git config user.name "check-action"
           git add repos.md dashboard.md
-          git commit -m "Update markdown files"
+          git commit -m "docs: update markdown files"
           git push origin "${GITHUB_REF#refs/heads/}"
