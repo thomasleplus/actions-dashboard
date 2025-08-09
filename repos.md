@@ -13,12 +13,10 @@ thomasleplus/DBGrep
 thomasleplus/decritic
 thomasleplus/defcon30
 thomasleplus/ethereum
-thomasleplus/Flipper-IRDB
 thomasleplus/flipperzero-ir
 thomasleplus/gdrive-archive
 thomasleplus/google-apps-scripts
 thomasleplus/gphotos-archive
-thomasleplus/IRDB
 thomasleplus/java-memory-safety
 thomasleplus/java-sql-inspector
 thomasleplus/JavaInfo
