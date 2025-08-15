@@ -26,6 +26,7 @@ thomasleplus/joplin-plugin-note-rename-regex
 thomasleplus/jwt-utils
 thomasleplus/kml-utils
 thomasleplus/macOS
+thomasleplus/randalf
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/scorecard
