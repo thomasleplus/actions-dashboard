@@ -17,14 +17,21 @@ jobs:
       - name: Install jq
         shell: bash
         run: |
-          sudo apt update
-          sudo apt install -y jq
+          set -euo pipefail
+          IFS=$'\n\t'
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y jq=1.7.1-3ubuntu0.24.04.1
+          if sudo apt-get upgrade -s | tee -a /dev/stderr | grep -q -e '^Inst jq '; then
+            exit 1
+          fi
 
       - name: Generate
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
         run: |
+          set -euo pipefail
+          IFS=$'\n\t'
           ./fetch.sh -u "${{ github.repository_owner }}" -o repos.md
           ./generate.sh -o dashboard.md -i repos.md
           if [ -z "$(git status -s -- dashboard.md repos.md)" ]; then
