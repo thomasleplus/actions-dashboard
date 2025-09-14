@@ -4,7 +4,7 @@
 
 If you have found a bug, want to request an enhancement or simply ask
 a question, feel free to open an
-[issue](https://github.com/thomasleplus/actions-dashboard/issues/new/choose).
+[issue](https://github.com/leplusorg/actions-dashboard/issues/new/choose).
 
 For security-related issues, please see our [security policy](/SECURITY.md).
 
