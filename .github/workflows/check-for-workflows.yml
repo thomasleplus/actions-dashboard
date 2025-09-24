@@ -7,11 +7,13 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
-permissions:
-  contents: write
+permissions: {}
 
 jobs:
   check-for-workflows:
+    permissions:
+      # Required to commit/push
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Check out
