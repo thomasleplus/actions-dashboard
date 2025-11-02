@@ -1,4 +1,5 @@
 thomasleplus/.allstar
+thomasleplus/3d
 thomasleplus/actions-dashboard
 thomasleplus/asn1dump
 thomasleplus/bazaar
