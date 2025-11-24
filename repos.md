@@ -33,7 +33,6 @@ thomasleplus/randalf
 thomasleplus/raspberry-pi-gpio
 thomasleplus/raspberry-pi-utils
 thomasleplus/scorecard
-thomasleplus/spotbugs
 thomasleplus/spring-security-relative-host-header-redirection
 thomasleplus/SubChannel
 thomasleplus/super-linter
