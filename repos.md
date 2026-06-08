@@ -18,6 +18,7 @@ thomasleplus/flipperzero-ir
 thomasleplus/gdrive-archive
 thomasleplus/google-apps-scripts
 thomasleplus/gphotos-archive
+thomasleplus/infographics
 thomasleplus/java-memory-safety
 thomasleplus/java-sql-inspector
 thomasleplus/JavaInfo
