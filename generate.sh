@@ -26,7 +26,7 @@ urlencode() {
 	done
 }
 
-isurl() { [[ "$1" =~ https?://* ]]; }
+isurl() { [[ "$1" =~ ^https?:// ]]; }
 
 writeout() { output="$output""$1"; }
 
@@ -35,13 +35,16 @@ parse_repo() {
 	repo="https://github.com/${project}"
 	writeout "| [${project}]($repo) |"
 
-	curl -fsSL "https://api.github.com/repos/${1}/actions/workflows" | jq -r '.workflows[].name' | while read -r name; do
+	# Read the loop with < <(command) so writeout updates "output" in this
+	# shell; piping into "while" would run the loop in a subshell and lose the
+	# badges.
+	while read -r name; do
 		encoded_name="$(urlencode "${name}")"
 		writeout " ["
 		writeout "![${name}](${repo}/workflows/${encoded_name}/badge.svg)"
 		writeout "]"
 		writeout "(${repo}/actions?query=workflow:\"${encoded_name}\")"
-	done
+	done < <(curl -fsSL "https://api.github.com/repos/${1}/actions/workflows" | jq -r '.workflows[].name')
 
 	writeout " [![GitHub PR](https://img.shields.io/github/issues/${1}.svg)](https://gitHub.com/${1}/issues)"
 	writeout " [![GitHub PR](https://img.shields.io/github/issues-pr/${1}.svg)](https://gitHub.com/${1}/pulls)"

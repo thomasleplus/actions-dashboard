@@ -50,7 +50,18 @@ while read -r line; do
 	[ -z "$line" ] && continue
 	writeout "$line\n"
 	count=$((count + 1))
-done < <(curl -fsSL --header "authorization: Bearer ${GITHUB_TOKEN}" "https://api.github.com/users/$username/repos?per_page=1000" | jq -r '.[].full_name')
+done < <(
+	# GitHub caps per_page at 100, so page through the results until an empty
+	# page comes back; otherwise accounts with more than 100 repos are silently
+	# truncated.
+	page=1
+	while :; do
+		names="$(curl -fsSL --header "authorization: Bearer ${GITHUB_TOKEN:?GITHUB_TOKEN is not set}" "https://api.github.com/users/$username/repos?per_page=100&page=$page" | jq -r '.[].full_name')"
+		if [ -z "$names" ]; then break; fi
+		printf '%s\n' "$names"
+		page=$((page + 1))
+	done
+)
 [ $count -eq 0 ] && {
 	echo "Failed to read"
 	exit 1
